@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.card {
+  background: var(--card);
+  color: var(--accent);
+  border-radius: 16px;
+  padding: 16px;
+}

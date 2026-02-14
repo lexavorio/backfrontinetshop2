@@ -1,0 +1,383 @@
+.app {
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.categories,
+.subcategories,
+.items {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.categoryButton,
+.productButton {
+  background: #fff;
+  border-radius: 14px;
+  padding: 14px 18px;
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.25s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.categoryButton:hover,
+.productButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  border-color: #d0d0d0;
+}
+
+.backButtonSmall {
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  background: #f3f3f3;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.backButtonSmall:hover {
+  background: #e8e8e8;
+}
+
+.productDetail img {
+  border-radius: 14px;
+  margin: 20px 0;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.search {
+
+  padding: 12px 16px;
+  font-size: 17px;
+  margin: 20px 0;
+  border-radius: 12px;
+  border: 1px solid #d4d4d4;
+  transition: 0.2s;
+}
+
+.search:focus {
+  border-color: #8c8cf5;
+  box-shadow: 0 0 0 3px rgba(140,140,245,0.25);
+}
+
+.loading,
+.error,
+.empty {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 18px;
+  color: #777;
+}
+.swiperSlideContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.swiperSlideContent:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.swiperSlideContent img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.swiperSlideContent h3 {
+  font-size: 16px;
+  margin: 6px 0;
+  text-align: center;
+}
+
+.swiperSlideContent p {
+  font-size: 14px;
+  color: #555;
+  margin: 2px 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #555;
+  background: rgba(255,255,255,0.9);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: 0.2s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: rgba(255,255,255,1);
+  color: #000;
+  transform: scale(1.1);
+}
+.registerWrapper {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.registerForm h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.registerForm input {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #d4d4d4;
+  font-size: 15px;
+}
+
+.registerForm input:focus {
+  border-color: #8c8cf5;
+  box-shadow: 0 0 0 3px rgba(140,140,245,0.25);
+}
+
+.registerForm span {
+  color: #d33;
+  font-size: 13px;
+}
+
+.registerForm button {
+  padding: 12px;
+  background: #8c8cf5;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.registerForm button:hover {
+  background: #7a7af0;
+}
+
+.discountPrice {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.discountBadge {
+  background: #ff4d4f;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.errorList span {
+  color: #d33;
+  font-size: 13px;
+}
+
+.heartButton {
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.heartButton:hover {
+  transform: scale(1.2);
+}
+
+.priceBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white
+}
+
+.newPrice {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.primary {
+  flex: 1;
+  background: #8c8cf5;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.secondary {
+  flex: 1;
+  background: #f3f3f3;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.productCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  transition: .2s;
+  cursor: pointer;
+}
+
+.productCard:hover {
+  transform: translateY(-4px);
+}
+
+.block {
+  padding: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #111;
+  border-radius: 16px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card:hover {
+  transform: translateY(-4px);
+  background: #4e4747;
+  color: white;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  color: #777;
+  margin-right: 8px;
+}
+.oldPrice:hover {
+  text-decoration: line-through;
+  color: inherit;
+  margin-right: 8px;
+}
+
+.categoryBtn {
+  padding: 20px;
+  border-radius: 16px;
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.swiperWrapper {
+  position: relative;
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 18px;
+  padding: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  cursor: pointer;
+  transition: .2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  color: white;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+}
+
+.title {
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.cardActions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 6px;
+  z-index: 2;
+}
+
+.iconBtn {
+  background: rgba(255,255,255,.95);
+  border: none;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.iconBtn:hover {
+  transform: scale(1.15);
+}
+
+.priceSteam {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+    margin-top: 8px;
+}
+
+.discountPercent {
+  background: #ff4d4f;
+  color: #fff;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+

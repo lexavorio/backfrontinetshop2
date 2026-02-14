@@ -1,0 +1,7 @@
+export * from './CategoryPage'
+export * from './CatalogPage'
+export * from './ProductPage'
+export * from './ProfilePage'
+export * from './FilterPage'
+export * from './ResultsPage'
+export * from './OrderPage'

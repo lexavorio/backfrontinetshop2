@@ -1,0 +1,15 @@
+:root {
+  --bg: #f3f4f6;
+  --card: #ffffff;
+  --text: #111827;
+  --border: #e5e7eb;
+  --accent: #6366f1;
+}
+
+[data-theme='dark'] {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #8da2ce;
+  --border: #334155;
+  --accent: #22d3ee;
+}
