@@ -3,7 +3,7 @@
 import axios from 'axios'
 
 export const api = axios.create({
-  baseURL: 'https://backfrontinetshop2.onrender.com/api'
+  baseURL: 'https://backfrontinetshop2backend.onrender.com/api'
 })
 
 api.interceptors.request.use(config => {
